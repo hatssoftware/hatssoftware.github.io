@@ -19,19 +19,29 @@ main {
 .header {
     background-color: navy;
     text-align: center;
+
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap
 }
 
 .header h1 {
     color: white;
     padding: 20px;
+
 }
 
 .drz-hubu {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
-.drz-hubu p {
+.drz-hubu > p {
     flex: 1;
     font-size: 1.2em;
     padding: 10px;
@@ -50,7 +60,8 @@ main {
 .karticka {
     background-color: lightgrey;
     border: 1px solid gray;
-    padding: 10px 0;
+    
+    padding: 1em;
 }
 
 .karticka img {
@@ -67,6 +78,71 @@ main {
 }
 
 .descriotpúion {
+    font-size: 1.15em;
     width: 75%;
     margin: 0 auto;
+}
+
+.about-us h2 {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    border: 3px gray solid;
+    border-top: 2px solid gray;
+
+}
+
+.drz-hubu .karticka {
+    flex: 1;
+}
+
+.user img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.footer {
+    margin-top: 4em;
+    padding: 1em 0;
+    text-align: center;
+    border: 1px gray solid;
+    background-color: lightgrey;
+    position: sticky;
+    bottom: 0;
+
+}
+
+aside {
+    position: fixed;
+    right: 1em;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+
+    background-color: lightgrey;
+    border: 1px solid gray;
+    padding: 1em 1em;
+    border-radius: 16px;
+}
+
+aside img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+    aspect-ratio: 1/1;
+}
+
+aside a:hover {
+    transform: scale(1.15);
+}
+
+.vlajkaaaaaaaaaaa {
+    display: inline-block;
+    width: 50px;
+    object-fit: contain;
+    object-position: center;
 }
