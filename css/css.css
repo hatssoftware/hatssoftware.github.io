@@ -33,15 +33,40 @@ main {
 
 .drz-hubu p {
     flex: 1;
+    font-size: 1.2em;
     padding: 10px;
     background-color: lightgrey;
     border: 1px solid gray;
 }
 
-.our-projects {
+.our-projects h2 {
     background-color: darkcyan;
     color: white;
     text-align: center;
     padding: 20px 0;
     border: 5px black solid;
+}
+
+.karticka {
+    background-color: lightgrey;
+    border: 1px solid gray;
+    padding: 10px 0;
+}
+
+.karticka img {
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    height: 200px;
+    object-fit: cover;
+}
+
+.karticka h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.descriotpúion {
+    width: 75%;
+    margin: 0 auto;
 }
